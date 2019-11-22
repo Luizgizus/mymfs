@@ -34,7 +34,7 @@ void config(string caminhoComando) {
 }
 
 void importarArquivo(string caminhoComando, string caminhoArquivoImport) {
-	sstreampos begin, end, pos;
+	streampos begin, end, pos;
 	ifstream arqConfigExiste(caminhoComando + "/mymfs.config"); // Verifica se o arquivo Config existe
 	if (mymfsEstaConfigurado(caminhoComando)) {
 		arqConfigExiste.seekg(0);              //Busca o fim do arquivo para verificar o tamanho do mesmo
